@@ -91,13 +91,6 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
 
-
-//                if (edtEmail.getText().toString().equals("admin") && edtPassword.getText().toString().equals("1234")){
-//                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-//                    startActivity(intent);
-//                }else{
-//                    Toast.makeText(getApplicationContext(), "No ID and Pass",Toast.LENGTH_LONG).show();
-//                }
             }
         });
         imgLogo.setOnClickListener(new View.OnClickListener() {
@@ -112,11 +105,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-//    public void onClickbtnRegister(View view) {
-//        Button btn_next = (Button)findViewById(R.id.btnRegister);
-//        Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
-//        startActivity(intent);
-//    }
     void LoginMember(String urlLogin, String email, String password ) throws IOException{
         FormBody.Builder formbuilder = new FormBody.Builder();
         formbuilder.add("member_email", email);
@@ -180,15 +168,6 @@ public class LoginActivity extends AppCompatActivity {
                                   }
                                }
                              });
-
-//                            Intent intent = new Intent(getApplicationContext(), HomeListActivity.class);
-//                                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                                        startActivity(intent);
-
-//                          Toast.makeText(getApplicationContext(), "Welcome to zzService Filter",Toast.LENGTH_LONG).show();
-//                          Intent intent = new Intent(LoginActivity.this, ListMemberActivity.class);
-//                          startActivity(intent);
-
 
 
                         }

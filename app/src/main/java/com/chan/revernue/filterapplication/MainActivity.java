@@ -29,16 +29,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void onClickLogin(View view){
-        Button btn_next = (Button)findViewById(R.id.btnLogin);
-        Intent intent = new Intent(MainActivity.this,CustomerActivity.class);
-        startActivity(intent);
-    }
-    public void onClickCreateAccount(View view){
-        TextView textView = (TextView) findViewById(R.id.txtCreateAccount);
-        Intent intent = new Intent(MainActivity.this, CreateAccountActivity.class);
-        startActivity(intent);
 
 
-    }
 }
