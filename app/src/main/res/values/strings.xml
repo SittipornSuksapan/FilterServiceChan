@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Filter Application</string>
+    <string name="app_name">Filter Service @ Application</string>
     <string name="user_id">ชื่อผู้ใช้ : </string>
     <string name="password_id">รหัสผ่าน : </string>
     <string name="re_password_id">ยืนยันรหัสผ่าน : </string>
@@ -26,8 +26,11 @@
     <string name="set_date">วันที่เตือนเปลี่ยนอะไหล่ : </string>
     <string name="install_date">วันที่ติดตั้งสินค้า : </string>
 
+    <string name="open_drawer">Open Menu</string>
+    <string name="close_drawer">Close Menu</string>
 
-    Equipment Brand
+
+
 
 
 </resources>

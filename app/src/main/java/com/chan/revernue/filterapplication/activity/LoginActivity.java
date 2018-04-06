@@ -1,4 +1,4 @@
-package com.chan.revernue.filterapplication;
+package com.chan.revernue.filterapplication.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.chan.revernue.filterapplication.R;
 import com.chan.revernue.filterapplication.transaction.dao.RealmMember;
 
 import org.json.JSONException;
@@ -204,7 +205,7 @@ public class LoginActivity extends AppCompatActivity {
                      String f = result.get(0).getMember_tel()  ;
                 Toast.makeText(LoginActivity.this,a+"\n"+b+"\n"+c+"\n"+d+"\n"+e+"\n"+f, Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(getApplicationContext(), HomeListActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
 

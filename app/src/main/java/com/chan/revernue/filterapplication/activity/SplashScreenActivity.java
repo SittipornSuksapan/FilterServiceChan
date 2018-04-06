@@ -1,4 +1,4 @@
-package com.chan.revernue.filterapplication;
+package com.chan.revernue.filterapplication.activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 
+import com.chan.revernue.filterapplication.R;
 import com.chan.revernue.filterapplication.transaction.dao.RealmMember;
 
 import io.realm.Realm;
@@ -45,7 +46,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }else {
-                    Intent intent = new Intent(SplashScreenActivity.this, HomeListActivity.class);
+                    Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 }

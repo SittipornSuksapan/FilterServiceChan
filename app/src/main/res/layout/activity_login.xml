@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/login"
 
-    tools:context="com.chan.revernue.filterapplication.LoginActivity">
+    tools:context="com.chan.revernue.filterapplication.activity.LoginActivity">
 
     <ImageView
         android:id="@+id/imgLogo"

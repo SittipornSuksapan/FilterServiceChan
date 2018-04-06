@@ -1,136 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.chan.revernue.filterapplication.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context="com.chan.revernue.filterapplication.activity.MainActivity">
 
     <LinearLayout
-        android:background="#3382f1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/txtHard">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Welcome To App"
-            android:gravity="center"
-            android:padding="20dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-
-        android:id="@+id/linTopLogin"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="6"
-
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="320dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/linTopUser"
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="1"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AlertDialog.AppCompat.Light">
 
-            android:orientation="horizontal">
-            <!--android:background="@drawable/box"-->
+        </android.support.v7.widget.Toolbar>
 
-            <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:src="@mipmap/ic_name2" />-->
-
-            <EditText
-                android:id="@+id/edtUser"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/background_black"
-                android:hint="User" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
+        <FrameLayout
+            android:id="@+id/contentContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/picDate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pic Date"
-                android:onClick="datePicker"/>
-            <TextView
-                android:layout_below="@+id/picDate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/showDate1"
-                android:textSize="18dp"/>
-        </LinearLayout>
+            android:layout_height="match_parent">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_below="@id/linTopUser"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-
-            android:orientation="horizontal">
-            <!--android:background="@drawable/box"-->
-
-            <!--<ImageView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:src="@mipmap/ic_pass" />-->
-
-            <EditText
-                android:id="@+id/edtPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Password" />
-
-        </LinearLayout>
-
-
-
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:layout_marginTop="10dp"
-            android:background="#000000"
-            android:text="Sign in"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:onClick="onClickLogin"
-            />
-
-        <TextView
-            android:id="@+id/txtCreateAccount"
-            android:layout_margin="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_gravity="center_horizontal"
-            android:clickable="true"
-            android:text="Create Account"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:onClick="onClickCreateAccount"/>
+        </FrameLayout>
     </LinearLayout>
 
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Filter Application"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Image Test"
+            android:src="@drawable/login" />
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
 
 
