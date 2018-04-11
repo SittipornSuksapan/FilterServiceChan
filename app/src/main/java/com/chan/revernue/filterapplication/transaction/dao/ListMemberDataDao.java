@@ -1,7 +1,7 @@
 package com.chan.revernue.filterapplication.transaction.dao;
 
 public class ListMemberDataDao {
-    private String customer_name, product_brand
+    private String customer_name,customer_adress, product_id_connected,product_brand
             ,product_name,product_system,equipment_id_connected
             ,equipment_type,equipment_description, equipment_spare_parts
             ,equipment_warning_date,equipment_installation_date;
@@ -9,11 +9,14 @@ public class ListMemberDataDao {
     public ListMemberDataDao() {
     }
 
-    public ListMemberDataDao(String customer_name,String product_brand
+    public ListMemberDataDao(String customer_name,String customer_adress,
+                            String product_id_connected,String product_brand
             ,String product_name,String product_system,String equipment_id_connected
             ,String equipment_type,String equipment_description,String  equipment_spare_parts
             ,String equipment_warning_date,String equipment_installation_date) {
         this.customer_name = customer_name;
+        this.customer_adress = customer_adress;
+        this.product_id_connected = product_id_connected;
         this.product_brand = product_brand;
         this.product_name = product_name;
         this.product_system = product_system;
@@ -24,6 +27,22 @@ public class ListMemberDataDao {
         this.equipment_warning_date = equipment_warning_date;
         this.equipment_installation_date = equipment_installation_date;
 
+    }
+
+    public String getProduct_id_connected() {
+        return product_id_connected;
+    }
+
+    public void setProduct_id_connected(String product_id_connected) {
+        this.product_id_connected = product_id_connected;
+    }
+
+    public String getCustomer_adress() {
+        return customer_adress;
+    }
+
+    public void setCustomer_adress(String customer_adress) {
+        this.customer_adress = customer_adress;
     }
 
     public String getCustomer_name() {

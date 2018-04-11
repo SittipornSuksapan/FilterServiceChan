@@ -62,8 +62,8 @@ public class CategoryAdapter extends RecyclerView.Adapter {
         public void bindView(final int position){
 //
             tv_Name.setText(mDataset.get(position).getCustomer_name());
-            tv_Id.setText(mDataset.get(position).getEquipment_id_connected());
-            tv_Description.setText(mDataset.get(position).getEquipment_type());
+            tv_Id.setText(mDataset.get(position).getProduct_id_connected());
+            tv_Description.setText(mDataset.get(position).getCustomer_adress());
 
         }
 

@@ -40,10 +40,17 @@ public class HomeMainFragment extends Fragment {
     CategoryAdapter mAdapter;
     RecyclerView.LayoutManager mLayoutManager;
     static String jsonData;
-    static String customer_name, product_brand
-            ,product_name,product_system,equipment_id_connected
-            ,equipment_type,equipment_description, equipment_spare_parts
-            ,equipment_warning_date,equipment_installation_date;
+    static String customer_name
+            ,customer_adress
+            ,product_brand
+            ,product_id_connected
+            ,product_name,product_system
+            ,equipment_id_connected
+            ,equipment_type
+            ,equipment_description
+            ,equipment_spare_parts
+            ,equipment_warning_date
+            ,equipment_installation_date;
     public static List<ListMemberDataDao> categoery;
 
     private static final OkHttpClient client = new OkHttpClient();
@@ -148,6 +155,8 @@ public class HomeMainFragment extends Fragment {
                                 for (int i = 0; i < jsonArray.length(); i++) {
                                     JSONObject jsonObject2 = jsonArray.getJSONObject(i);
                                     customer_name = jsonObject2.getString("customer_name");
+                                    customer_adress = jsonObject2.getString("customer_adress");
+                                    product_id_connected= jsonObject2.getString("product_id_connected");
                                     product_brand= jsonObject2.getString("product_brand");
                                     product_name= jsonObject2.getString("product_name");
                                     product_system= jsonObject2.getString("product_system");
@@ -159,7 +168,7 @@ public class HomeMainFragment extends Fragment {
                                     equipment_installation_date= jsonObject2.getString("equipment_installation_date");
 
 
-                                    categoery.add(new ListMemberDataDao(customer_name, product_brand,product_name,product_system,equipment_id_connected,equipment_type,equipment_description, equipment_spare_parts,equipment_warning_date,equipment_installation_date));
+                                    categoery.add(new ListMemberDataDao(customer_name,customer_adress,product_id_connected, product_brand,product_name,product_system,equipment_id_connected,equipment_type,equipment_description, equipment_spare_parts,equipment_warning_date,equipment_installation_date));
                                 }
 
                                 // use a linear layout manager

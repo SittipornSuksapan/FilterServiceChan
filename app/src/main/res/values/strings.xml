@@ -38,6 +38,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="base_url">http://devtest.boripatp.com/chan01/api/</string>
+    <string name="search">search</string>
 
 
 </resources>
