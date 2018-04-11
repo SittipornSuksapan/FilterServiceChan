@@ -4,7 +4,8 @@ public class ListMemberDataDao {
     private String customer_name,customer_adress, product_id_connected,product_brand
             ,product_name,product_system,equipment_id_connected
             ,equipment_type,equipment_description, equipment_spare_parts
-            ,equipment_warning_date,equipment_installation_date;
+            ,equipment_warning_date,equipment_installation_date
+            ,member_email,member_fistname;
 
     public ListMemberDataDao() {
     }
@@ -13,12 +14,14 @@ public class ListMemberDataDao {
                             String product_id_connected,String product_brand
             ,String product_name,String product_system,String equipment_id_connected
             ,String equipment_type,String equipment_description,String  equipment_spare_parts
-            ,String equipment_warning_date,String equipment_installation_date) {
+            ,String equipment_warning_date,String equipment_installation_date
+            ,String member_email,String member_fistname) {
         this.customer_name = customer_name;
         this.customer_adress = customer_adress;
         this.product_id_connected = product_id_connected;
         this.product_brand = product_brand;
         this.product_name = product_name;
+
         this.product_system = product_system;
         this.equipment_id_connected = equipment_id_connected;
         this.equipment_type = equipment_type;
@@ -26,7 +29,25 @@ public class ListMemberDataDao {
         this.equipment_spare_parts = equipment_spare_parts;
         this.equipment_warning_date = equipment_warning_date;
         this.equipment_installation_date = equipment_installation_date;
+        this.member_fistname = member_fistname;
+        this.member_email = member_email;
 
+    }
+
+    public String getMember_email() {
+        return member_email;
+    }
+
+    public void setMember_email(String member_email) {
+        this.member_email = member_email;
+    }
+
+    public String getMember_fistname() {
+        return member_fistname;
+    }
+
+    public void setMember_fistname(String member_fistname) {
+        this.member_fistname = member_fistname;
     }
 
     public String getProduct_id_connected() {

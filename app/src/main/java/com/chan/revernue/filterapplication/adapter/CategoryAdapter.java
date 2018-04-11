@@ -48,13 +48,16 @@ public class CategoryAdapter extends RecyclerView.Adapter {
         return mDataset.size();
     }
     private class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        public TextView tv_Name,tv_Id,tv_Description;
+        public TextView tv_Name,tv_Id,tv_Description,tv_Name_Home,tv_Name_User;
 //
         public ListViewHolder(View itemView){
             super(itemView);
             tv_Name = (TextView) itemView.findViewById(R.id.tvName);
             tv_Description = (TextView) itemView.findViewById(R.id.tvDescription);
             tv_Id = (TextView) itemView.findViewById(R.id.tvID);
+
+
+
 //
             itemView.setOnClickListener(this);
         }
@@ -64,6 +67,8 @@ public class CategoryAdapter extends RecyclerView.Adapter {
             tv_Name.setText(mDataset.get(position).getCustomer_name());
             tv_Id.setText(mDataset.get(position).getProduct_id_connected());
             tv_Description.setText(mDataset.get(position).getCustomer_adress());
+//            tv_Name_Home.setText(mDataset.get(position).getMember_fistname());
+//            tv_Description.setText(mDataset.get(position).getMember_email());
 
         }
 

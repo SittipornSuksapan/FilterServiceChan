@@ -50,7 +50,9 @@ public class HomeMainFragment extends Fragment {
             ,equipment_description
             ,equipment_spare_parts
             ,equipment_warning_date
-            ,equipment_installation_date;
+            ,equipment_installation_date
+            ,member_email
+            ,member_fistname;
     public static List<ListMemberDataDao> categoery;
 
     private static final OkHttpClient client = new OkHttpClient();
@@ -156,19 +158,25 @@ public class HomeMainFragment extends Fragment {
                                     JSONObject jsonObject2 = jsonArray.getJSONObject(i);
                                     customer_name = jsonObject2.getString("customer_name");
                                     customer_adress = jsonObject2.getString("customer_adress");
-                                    product_id_connected= jsonObject2.getString("product_id_connected");
-                                    product_brand= jsonObject2.getString("product_brand");
-                                    product_name= jsonObject2.getString("product_name");
-                                    product_system= jsonObject2.getString("product_system");
-                                    equipment_id_connected= jsonObject2.getString("equipment_id_connected");
-                                    equipment_type= jsonObject2.getString("equipment_type");
+                                    product_id_connected = jsonObject2.getString("product_id_connected");
+                                    product_brand = jsonObject2.getString("product_brand");
+                                    product_name = jsonObject2.getString("product_name");
+                                    product_system = jsonObject2.getString("product_system");
+                                    equipment_id_connected = jsonObject2.getString("equipment_id_connected");
+                                    equipment_type = jsonObject2.getString("equipment_type");
                                     equipment_description = jsonObject2.getString("equipment_description");
-                                    equipment_spare_parts= jsonObject2.getString("equipment_spare_parts");
-                                    equipment_warning_date= jsonObject2.getString("equipment_warning_date");
-                                    equipment_installation_date= jsonObject2.getString("equipment_installation_date");
+                                    equipment_spare_parts = jsonObject2.getString("equipment_spare_parts");
+                                    equipment_warning_date = jsonObject2.getString("equipment_warning_date");
+                                    equipment_installation_date = jsonObject2.getString("equipment_installation_date");
+                                    member_fistname = jsonObject2.getString("member_fistname");
+                                    member_email = jsonObject2.getString("member_email");
 
 
-                                    categoery.add(new ListMemberDataDao(customer_name,customer_adress,product_id_connected, product_brand,product_name,product_system,equipment_id_connected,equipment_type,equipment_description, equipment_spare_parts,equipment_warning_date,equipment_installation_date));
+                                    categoery.add(new ListMemberDataDao(customer_name,customer_adress,
+                                            product_id_connected,
+                                            product_brand,product_name,product_system,equipment_id_connected,
+                                            equipment_type,equipment_description, equipment_spare_parts,equipment_warning_date,
+                                            equipment_installation_date,member_email,member_fistname));
                                 }
 
                                 // use a linear layout manager
