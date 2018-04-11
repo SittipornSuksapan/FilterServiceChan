@@ -5,30 +5,38 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.AttributeSet;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.chan.revernue.filterapplication.R;
-import com.inthecheesefactory.thecheeselibrary.view.BaseCustomViewGroup;
-import com.inthecheesefactory.thecheeselibrary.view.state.BundleSavedState;
+import com.chan.revernue.filterapplication.view.state.BundleSavedState;
 
 /**
  * Created by nuuneoi on 11/16/2014.
  */
-public class ListItem extends BaseCustomViewGroup {
+public class ListRowCardview extends BaseCustomViewGroup {
 
-    public ListItem(Context context) {
+    TextView tvName;
+
+
+
+    TextView tvDescription;
+    TextView tvId;
+
+    public ListRowCardview(Context context) {
         super(context);
         initInflate();
         initInstances();
     }
 
-    public ListItem(Context context, AttributeSet attrs) {
+    public ListRowCardview(Context context, AttributeSet attrs) {
         super(context, attrs);
         initInflate();
         initInstances();
         initWithAttrs(attrs, 0, 0);
     }
 
-    public ListItem(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ListRowCardview(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initInflate();
         initInstances();
@@ -36,7 +44,7 @@ public class ListItem extends BaseCustomViewGroup {
     }
 
     @TargetApi(21)
-    public ListItem(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public ListRowCardview(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         initInflate();
         initInstances();
@@ -44,11 +52,15 @@ public class ListItem extends BaseCustomViewGroup {
     }
 
     private void initInflate() {
-        inflate(getContext(), R.layout.list_item, this);
+        inflate(getContext(), R.layout.list_row_cardview, this);
     }
 
     private void initInstances() {
         // findViewById here
+        tvDescription = (TextView) findViewById(R.id.tvDescription);
+        tvName = (TextView) findViewById(R.id.tvName);
+        tvId = (TextView) findViewById(R.id.tvID);
+
     }
 
     private void initWithAttrs(AttributeSet attrs, int defStyleAttr, int defStyleRes) {
@@ -86,16 +98,14 @@ public class ListItem extends BaseCustomViewGroup {
         Bundle bundle = ss.getBundle();
         // Restore State from bundle here
     }
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int width = MeasureSpec.getSize(widthMeasureSpec);
-        int height = width * 2 / 3;
-        int newHeightMeasureSpec = MeasureSpec.makeMeasureSpec(
-                height,
-                MeasureSpec.EXACTLY
-        );
-        super.onMeasure(widthMeasureSpec, newHeightMeasureSpec);
-        setMeasuredDimension(width,height);
+    public void setNameText(String text) {
+        tvName.setText(text);
     }
+    public void setDescriptionText(String text) {
+        tvDescription.setText(text);
+    }
+    public void setIdText(String text) {
+        tvId.setText(text);
+    }
+
 }

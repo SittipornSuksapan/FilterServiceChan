@@ -8,8 +8,7 @@ import android.util.AttributeSet;
 
 
 import com.chan.revernue.filterapplication.R;
-import com.inthecheesefactory.thecheeselibrary.view.BaseCustomViewGroup;
-import com.inthecheesefactory.thecheeselibrary.view.state.BundleSavedState;
+import com.chan.revernue.filterapplication.view.state.BundleSavedState;
 
 /**
  * Created by nuuneoi on 11/16/2014.

@@ -8,7 +8,8 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.inthecheesefactory.thecheeselibrary.view.state.BundleSavedState;
+import com.chan.revernue.filterapplication.view.state.BundleSavedState;
+
 
 /**
  * Created by nuuneoi on 11/16/2014.

@@ -13,14 +13,14 @@ import com.chan.revernue.filterapplication.R;
 /**
  * Created by nuuneoi on 11/16/2014.
  */
-public class MainFragment extends Fragment {
+public class FragmentTemplateFull extends Fragment {
 
-    public MainFragment() {
+    public FragmentTemplateFull() {
         super();
     }
 
-    public static MainFragment newInstance() {
-        MainFragment fragment = new MainFragment();
+    public static FragmentTemplateFull newInstance() {
+        FragmentTemplateFull fragment = new FragmentTemplateFull();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;

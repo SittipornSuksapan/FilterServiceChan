@@ -26,7 +26,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_splash_screen);
 
-        Realm.init(this);
+        Realm.init(getApplication());
         RealmConfiguration config = new RealmConfiguration.Builder()
                 .name(Realm.DEFAULT_REALM_NAME)
                 .deleteRealmIfMigrationNeeded()
@@ -46,7 +46,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }else {
-                    Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
+                    Intent intent = new Intent(SplashScreenActivity.this, HomeMainActivity.class);
                     startActivity(intent);
                     finish();
                 }

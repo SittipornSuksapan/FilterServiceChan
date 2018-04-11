@@ -2,7 +2,8 @@ package com.chan.revernue.filterapplication;
 
 import android.app.Application;
 
-import com.inthecheesefactory.thecheeselibrary.manager.Contextor;
+import com.chan.revernue.filterapplication.manager.Contextor;
+
 
 public class MainApplication extends Application {
     @Override
