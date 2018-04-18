@@ -18,7 +18,11 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
+<<<<<<< HEAD
                                       <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_search_black_24dp.xml" />
+=======
+                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_search_black_24dp.xml" />
+>>>>>>> origin/master
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -30,7 +34,11 @@
                           <map>
                             <entry key="color" value="ffffff" />
                             <entry key="outputName" value="ic_search_black_24dp" />
+<<<<<<< HEAD
                             <entry key="sourceFile" value="C:\Users\zzz" />
+=======
+                            <entry key="sourceFile" value="$USER_HOME$" />
+>>>>>>> origin/master
                           </map>
                         </option>
                       </PersistentState>
