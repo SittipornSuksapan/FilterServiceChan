@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -12,14 +13,22 @@
     android:paddingBottom="@dimen/row_padding_vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+
+
     android:paddingTop="@dimen/row_padding_vertical">
 
+    <!--android:background="@drawable/selector_overlay"-->
+
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+
+
         <ImageView
+            android:id="@+id/ivStatus"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="center_vertical"
@@ -73,11 +82,24 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="fgdfgdfgdfgk;'kfg;'dfkg'f;gkd;gkk;;'kgd';fkgd;'tionDescriptionDescriptionDescription"
+                android:text="'kgd';fkgd;'tionDescriptionDescriptionDescription"
                 android:textSize="18sp" />
+
+
         </LinearLayout>
 
+
+
+
     </LinearLayout>
+
+    <View
+        android:id="@+id/ivButton"
+        android:background="@drawable/selector_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
 
 
 </android.support.v7.widget.CardView>

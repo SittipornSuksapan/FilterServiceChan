@@ -10,6 +10,10 @@ public interface ApiService {
     //SplashScreenActivity
     @FormUrlEncoded
     @POST("selectListAll.php")
-    Call<ResponseBody>getMember(@Field("id_member") String id_member);
+    Call<ResponseBody>getListItemCustomer(@Field("id_member") String id_member, @Field("product_id_connected") String product_id_connected);
+
+    @FormUrlEncoded
+    @POST("selectCustomer.php")
+    Call<ResponseBody>getListCustomer(@Field("id_member") String id_member);
 
 }

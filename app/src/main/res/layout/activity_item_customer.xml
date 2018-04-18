@@ -26,9 +26,9 @@
 
 
     <!--<com.chan.revernue.filterapplication.view.ListRowCardview-->
-        <!--android:id="@+id/listRowCardview"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content">-->
+    <!--android:id="@+id/listItemCustomerProductEquipmentCardview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
 
     <!--</com.chan.revernue.filterapplication.view.ListRowCardview>-->
 

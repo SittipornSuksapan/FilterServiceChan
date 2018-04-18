@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Filter Service @ Application</string>
+    <string name="app_name">Filter@Service</string>
     <string name="user_id">ชื่อผู้ใช้ : </string>
     <string name="password_id">รหัสผ่าน : </string>
     <string name="re_password_id">ยืนยันรหัสผ่าน : </string>
@@ -38,6 +38,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="base_url">http://devtest.boripatp.com/chan01/api/</string>
+    <string name="title_activity_list_customer">ListCustomerActivity</string>
 
 
 </resources>

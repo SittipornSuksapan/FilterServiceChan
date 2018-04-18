@@ -205,7 +205,7 @@ public class LoginActivity extends AppCompatActivity {
                      String f = result.get(0).getMember_tel()  ;
                 Toast.makeText(LoginActivity.this,a+"\n"+b+"\n"+c+"\n"+d+"\n"+e+"\n"+f, Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(getApplicationContext(), HomeMainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ListCustomerActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
 
